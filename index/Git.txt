@@ -1,0 +1,200 @@
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Mayur/Desktop/git folder/.git/
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index/index.html
+
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git add .git
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git add index
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index/index.html
+
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ touch about1.html
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ touch cintact1.html
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ touch monuments1.html
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about1.html
+        cintact1.html
+        monuments1.html
+
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git add -A
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   about1.html
+        new file:   cintact1.html
+        new file:   index/index.html
+        new file:   monuments1.html
+
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git commit -m "Added more html"
+[master (root-commit) 0447ab2] Added more html
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about1.html
+ create mode 100644 cintact1.html
+ create mode 100644 index/index.html
+ create mode 100644 monuments1.html
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git checkout about1.html
+Updated 0 paths from the index
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git checkout cintact1.html
+Updated 0 paths from the index
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git checkout monuments1.html
+Updated 0 paths from the index
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git checkout -f
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git diff
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git diff
+
+Mayur@DESKTOP-CN7EMKA MINGW64 ~/Desktop/git folder (master)
+$ git diff
+diff --git a/about1.html b/about1.html
+index e69de29..f21ee1b 100644
+--- a/about1.html
++++ b/about1.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<head>
++<title>Heading Exampler Always/title>
++</head>
++<body>
++<h1>This is 1</h2>
++<h2>This is Palace 2</h2>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/cintact1.html b/cintact1.html
+index e69de29..2c1a0b8 100644
+--- a/cintact1.html
++++ b/cintact1.html
+@@ -0,0 +1,19 @@
++<!DOCTYPE html>
++
+:...skipping...
+diff --git a/about1.html b/about1.html
+index e69de29..f21ee1b 100644
+--- a/about1.html
++++ b/about1.html
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html>
++<head>
++<title>Heading Exampler Always/title>
++</head>
++<body>
++<h1>This is 1</h2>
++<h2>This is Palace 2</h2>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/cintact1.html b/cintact1.html
+index e69de29..2c1a0b8 100644
+--- a/cintact1.html
++++ b/cintact1.html
+@@ -0,0 +1,19 @@
++<!DOCTYPE html>
++
++<html>
++
++<head>
++
++     <title></title>
++
++</head>
++
++<body>
++<h1>This is Name 1</h2>
++<h2>This is Class 2</h2> <h2>This is School-2</h2>
++<h2>This is Country-2</h2>
++<h2>This is Friend-2</h2>
++
++</body>
++
++</html>
+\ No newline at end of file
+diff --git a/monuments1.html b/monuments1.html
+index e69de29..04f7416 100644
+--- a/monuments1.html
++++ b/monuments1.html
+@@ -0,0 +1,12 @@
++[4:01 PM] Inamdar, Pravin
++<!DOCTYPE html>
+:
